@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Votum — Automação e Inteligência Artificial para empresas</title>
+  <meta name="description" content="A Votum projeta e opera automações com inteligência artificial para empresas: atendimento por chatbot no WhatsApp e no site, automação de processos e dados para decisão.">
+  <link rel="canonical" href="https://votumhub.com/">
+  <!-- Verificações de propriedade (preencher com os códigos das contas): -->
+  <!-- <meta name="google-site-verification" content="CODIGO_GOOGLE_SEARCH_CONSOLE"> -->
+  <!-- <meta name="facebook-domain-verification" content="CODIGO_META_BUSINESS"> -->
+  <meta property="og:title" content="Votum — Automação e IA para empresas">
+  <meta property="og:description" content="Atendimento com chatbots, automação de processos e dados para decisão. Projetado, implantado e operado pela Votum.">
+  <meta property="og:url" content="https://votumhub.com/">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      --bg: #0c1018;
+      --bg-soft: #121826;
+      --card: #161e30;
+      --line: #233048;
+      --text: #e8edf6;
+      --muted: #9aa7bd;
+      --accent: #4f8cff;
+      --accent-soft: rgba(79, 140, 255, 0.12);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(12, 16, 24, 0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.04em; color: var(--text); text-decoration: none; }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+    .hero { padding: 96px 0 80px; border-bottom: 1px solid var(--line); }
+    .hero-tag {
+      display: inline-block; padding: 6px 14px; border: 1px solid var(--line);
+      border-radius: 999px; color: var(--muted); font-size: 0.85rem; margin-bottom: 24px;
+      background: var(--bg-soft);
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.15; font-weight: 700; max-width: 760px; }
+    h1 em { font-style: normal; color: var(--accent); }
+    .hero p { margin-top: 20px; font-size: 1.15rem; color: var(--muted); max-width: 640px; }
+    .cta-row { margin-top: 36px; display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 13px 26px; border-radius: 8px;
+      text-decoration: none; font-weight: 600; font-size: 1rem; transition: opacity 0.2s, background 0.2s;
+    }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { opacity: 0.88; }
+    .btn-ghost { border: 1px solid var(--line); color: var(--text); background: transparent; }
+    .btn-ghost:hover { background: var(--bg-soft); }
+    section { padding: 80px 0; border-bottom: 1px solid var(--line); }
+    .kicker { color: var(--accent); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+    h2 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); margin-top: 12px; font-weight: 700; }
+    .section-lead { color: var(--muted); margin-top: 14px; max-width: 640px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 44px; }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 28px;
+    }
+    .card h3 { font-size: 1.1rem; margin-bottom: 10px; }
+    .card p { color: var(--muted); font-size: 0.97rem; }
+    .card .mark {
+      width: 38px; height: 38px; border-radius: 9px; background: var(--accent-soft);
+      color: var(--accent); display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 1rem; margin-bottom: 18px; letter-spacing: 0.02em;
+    }
+    .steps { margin-top: 44px; display: grid; gap: 0; }
+    .step { display: flex; gap: 20px; padding: 22px 0; border-top: 1px solid var(--line); }
+    .step:last-child { border-bottom: 1px solid var(--line); }
+    .step-n { color: var(--accent); font-weight: 800; font-size: 1rem; min-width: 34px; padding-top: 2px; }
+    .step h3 { font-size: 1.05rem; margin-bottom: 6px; }
+    .step p { color: var(--muted); font-size: 0.95rem; max-width: 620px; }
+    .contact-box {
+      margin-top: 44px; background: var(--card); border: 1px solid var(--line);
+      border-radius: 12px; padding: 36px; display: flex; flex-wrap: wrap; gap: 24px;
+      align-items: center; justify-content: space-between;
+    }
+    .contact-box h3 { font-size: 1.25rem; }
+    .contact-box p { color: var(--muted); margin-top: 6px; }
+    footer { padding: 44px 0 56px; color: var(--muted); font-size: 0.9rem; }
+    .foot-grid { display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-start; }
+    .foot-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    .foot-links a { color: var(--muted); text-decoration: none; }
+    .foot-links a:hover { color: var(--text); }
+    .foot-legal { margin-top: 18px; font-size: 0.85rem; color: #6b7892; }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hero { padding: 64px 0 56px; }
+      section { padding: 56px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="/">VOTUM<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#servicos">Serviços</a>
+        <a href="#como-trabalhamos">Como trabalhamos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="hero-tag">Automação · Inteligência Artificial · Atendimento</span>
+        <h1>Sua empresa atendendo, vendendo e operando <em>com inteligência artificial</em> — sem aumentar o time.</h1>
+        <p>A Votum projeta, implanta e opera automações com IA sob medida: chatbots de atendimento no WhatsApp e no seu site, processos que rodam sozinhos e dados organizados para decisão.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:contato@votumhub.com">Falar com a Votum</a>
+          <a class="btn btn-ghost" href="#servicos">Conhecer os serviços</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="wrap">
+        <span class="kicker">Serviços</span>
+        <h2>O que entregamos</h2>
+        <p class="section-lead">Soluções construídas sobre a mesma plataforma que operamos para os nossos clientes — cada projeto nasce pronto para rodar em produção.</p>
+        <div class="grid">
+          <div class="card">
+            <div class="mark">01</div>
+            <h3>Chatbots de atendimento com IA</h3>
+            <p>Atendimento automático no WhatsApp, no Instagram e no seu site, com linguagem natural, qualificação de leads, agendamento e transbordo para humano quando necessário. Operação oficial via API da Meta.</p>
+          </div>
+          <div class="card">
+            <div class="mark">02</div>
+            <h3>Automação de processos</h3>
+            <p>Rotinas comerciais e operacionais que rodam sozinhas: follow-up de leads, emissão de relatórios, integrações entre sistemas, notificações e fluxos de aprovação.</p>
+          </div>
+          <div class="card">
+            <div class="mark">03</div>
+            <h3>Dados para decisão</h3>
+            <p>Organização dos dados do negócio em painéis e relatórios executivos: funil comercial, atendimento, desempenho de campanhas e indicadores operacionais em um lugar só.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-trabalhamos">
+      <div class="wrap">
+        <span class="kicker">Método</span>
+        <h2>Como trabalhamos</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-n">1</div>
+            <div>
+              <h3>Diagnóstico</h3>
+              <p>Entendemos o fluxo real do seu negócio: onde o atendimento perde cliente, onde o processo trava e quais dados faltam para decidir.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">2</div>
+            <div>
+              <h3>Implantação</h3>
+              <p>Construímos e implantamos a solução em produção — bot configurado com a voz da sua marca, processos conectados aos seus sistemas e indicadores definidos.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">3</div>
+            <div>
+              <h3>Operação contínua</h3>
+              <p>Monitoramos, ajustamos e evoluímos a solução com o uso real. Você acompanha resultados; a Votum cuida da tecnologia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="wrap">
+        <span class="kicker">Contato</span>
+        <h2>Vamos conversar</h2>
+        <div class="contact-box">
+          <div>
+            <h3>Conte o que você quer automatizar.</h3>
+            <p>Respondemos com um diagnóstico objetivo e os próximos passos.</p>
+          </div>
+          <a class="btn btn-primary" href="mailto:contato@votumhub.com">contato@votumhub.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <strong style="color: var(--text); letter-spacing: 0.04em;">VOTUM</strong>
+          <p style="margin-top: 8px; max-width: 380px;">Automação e inteligência artificial para empresas. Projetado, implantado e operado pela Votum.</p>
+        </div>
+        <nav class="foot-links">
+          <a href="/privacidade.html">Política de Privacidade</a>
+          <a href="/termos.html">Termos de Uso</a>
+          <a href="mailto:contato@votumhub.com">contato@votumhub.com</a>
+        </nav>
+      </div>
+      <p class="foot-legal">© 2026 Votum. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
