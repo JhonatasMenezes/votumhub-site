@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="500" height="120" role="img" aria-label="VOTUM. wordmark canonical — bloco obsidian + Georgia italic bold + period ember · uso sobre fundos CLAROS" lang="pt">
+  <title>VOTUM wordmark v1.4 — canonical (bloco obsidian sobre fundos CLAROS)</title>
+  <desc>Wordmark default. O bloco obsidian É parte integral do logo (talha) — usar SOMENTE sobre fundos claros (bone-light, white, papel). Bloco escuro em fundo escuro invalida a talha visualmente. Para fundos escuros, usar wordmark-light.svg. Métricas: text bbox 436×82, cap height 79. padH/padV ≈ φ. Canvas 500×120.</desc>
+  <style>
+    .vt-word { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: bold; font-size: 110px; letter-spacing: -0.038em; fill: #E8E5DE; }
+    .vt-period { font-size: 53px; fill: #FF5A1F; }
+  </style>
+  <rect x="26.5" y="10" width="447" height="100" fill="#0E1014" stroke="#3A4050" stroke-width="0.7"/>
+  <!-- Ligadura customizada VO=-14 OT=-9. Period dy=2. Text x=38 y=98 (estado aprovado pelo founder). Padding atual ~32 H 17/16 V — não bate com original 19.5/17/15 mas mantém proporção visual do rect. -->
+  <text x="36" y="98" class="vt-word">V<tspan dx="-14">O</tspan><tspan dx="-9">T</tspan>UM<tspan class="vt-period" dy="2">.</tspan></text>
+</svg>
