@@ -1,0 +1,104 @@
+{
+  "$meta": {
+    "name": "Votum Design Tokens",
+    "version": "1.5-web",
+    "date": "2026-06-12",
+    "base": "brand-tokens v1.4",
+    "status": "APROVADO-COM-CORRECOES (WF-16: GraphicDesigner -> BrandGuardian -> FrontendArtisan)",
+    "corrections": ["C-01 text-3 contrast", "C-02 slate-info scope", "C-03 disabled state"]
+  },
+  "color": {
+    "bg": { "$value": "#0A0A0A", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.040 0.000 0)" }, "$description": "Obsidian Black — background base do site" },
+    "bg_deep": { "$value": "#0E0E10", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.063 0.004 275)" }, "$description": "Obsidian Deep — gradiente de fundo (polo inferior)" },
+    "surface": { "$value": "#1F1F22", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.145 0.005 275)" }, "$description": "Piano Gloss Mid — surface principal (v1.4)" },
+    "surface_01": { "$value": "#111113", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.080 0.003 275)" } },
+    "surface_02": { "$value": "#141417", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.100 0.004 275)" } },
+    "surface_03": { "$value": "#17171A", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.120 0.004 275)" } },
+    "surface_04": { "$value": "#1B1B1E", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.135 0.005 275)" } },
+    "text": { "$value": "#E8E5DE", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.909 0.010 85)" }, "$description": "Bone Light — texto primário" },
+    "text_2": { "$value": "#B5B2AB", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.720 0.008 82)" }, "$description": "Texto secundário — seguro para body em qualquer surface" },
+    "text_3": { "$value": "#898680", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.550 0.007 80)" }, "$description": "[C-01] PROIBIDO em texto <18px regular sobre piano-gloss. Usar text_2 nesses casos." },
+    "text_4": { "$value": "#5A5856", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.380 0.005 78)" }, "$description": "Não-textual: bordas, ícones decorativos" },
+    "accent": { "$value": "#FF5A1F", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.647 0.190 42)" }, "$description": "Ember Orange — CTA, interações principais (≤10% por seção)" },
+    "accent_deep": { "$value": "#C2370B", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.483 0.175 35)" } },
+    "accent_gold": { "$value": "#FFB433", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.782 0.135 75)" }, "$description": "máx 3% do viewport" },
+    "accent_hover": { "$value": "#FF6F39", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.680 0.185 42)" } },
+    "accent_active": { "$value": "#E8481A", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.610 0.196 40)" } },
+    "accent_disabled": { "$value": "#7E7472", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.560 0.030 42)" }, "$description": "[C-03]" },
+    "iron_warm": { "$value": "#191512", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.115 0.008 55)", "votum.constraints": "C máx 0.010, L máx 0.130. Nunca na mesma seção que ember filled." }, "$description": "Surface alternativa quente — seções sem CTA ember" },
+    "slate_info": { "$value": "#1B1C22", "$type": "color", "$extensions": { "votum.oklch": "oklch(0.145 0.008 265)", "votum.constraints": "[C-02] Máx 5% viewport. Só funcional/estado." } }
+  },
+  "color_roles": {
+    "background": {
+      "page": { "$value": "{color.bg}" },
+      "page_deep": { "$value": "{color.bg_deep}" },
+      "surface": { "$value": "{color.surface}" },
+      "surface_l1": { "$value": "{color.surface_01}" },
+      "surface_l2": { "$value": "{color.surface_02}" },
+      "surface_l3": { "$value": "{color.surface_03}" },
+      "surface_l4": { "$value": "{color.surface_04}" },
+      "warm_alt": { "$value": "{color.iron_warm}" },
+      "info": { "$value": "{color.slate_info}" }
+    },
+    "text": {
+      "primary": { "$value": "{color.text}" },
+      "secondary": { "$value": "{color.text_2}" },
+      "tertiary": { "$value": "{color.text_3}" },
+      "muted": { "$value": "{color.text_4}" },
+      "on_ember": { "$value": "{color.bg}", "$description": "Texto sobre botão ember filled — APENAS #0A0A0A (6.3:1)" }
+    },
+    "interactive": {
+      "default": { "$value": "{color.accent}" },
+      "hover": { "$value": "{color.accent_hover}" },
+      "active": { "$value": "{color.accent_active}" },
+      "disabled": { "$value": "{color.accent_disabled}" },
+      "focus_ring": { "$value": "rgba(255, 90, 31, 0.50)" }
+    },
+    "border": {
+      "default": { "$value": "rgba(31, 31, 34, 0.60)" },
+      "subtle": { "$value": "rgba(31, 31, 34, 0.30)" },
+      "emphasis": { "$value": "rgba(255, 90, 31, 0.25)" },
+      "grid": { "$value": "rgba(31, 31, 34, 0.25)" }
+    },
+    "glow": {
+      "cta": { "$value": "0 0 24px rgba(255, 90, 31, 0.12)", "$description": "máx 2 visíveis simultaneamente/viewport" },
+      "hero": { "$value": "radial-gradient(ellipse 800px 400px at 50% 0%, rgba(255, 90, 31, 0.06), transparent 70%)", "$description": "máx 1 por página" }
+    }
+  },
+  "typography": {
+    "family": {
+      "display": { "$value": "Space Grotesk", "$type": "fontFamily", "$description": "Headings, display, labels" },
+      "body": { "$value": "DM Sans", "$type": "fontFamily" },
+      "mono": { "$value": "JetBrains Mono", "$type": "fontFamily" },
+      "logo": { "$value": "Fraunces 800 italic", "$type": "fontFamily", "$description": "EXCLUSIVO do wordmark — proibido no site" }
+    },
+    "weight": { "light": 300, "regular": 400, "medium": 500, "semibold": 600, "bold": 700 },
+    "scale": {
+      "display": { "fontFamily": "Space Grotesk", "fontSize": "72px", "fontWeight": 700, "lineHeight": 1.05, "letterSpacing": "-0.025em" },
+      "h1": { "fontFamily": "Space Grotesk", "fontSize": "56px", "fontWeight": 700, "lineHeight": 1.1, "letterSpacing": "-0.015em" },
+      "h2": { "fontFamily": "Space Grotesk", "fontSize": "40px", "fontWeight": 600, "lineHeight": 1.15 },
+      "h3": { "fontFamily": "Space Grotesk", "fontSize": "28px", "fontWeight": 500, "lineHeight": 1.25 },
+      "h4": { "fontFamily": "Space Grotesk", "fontSize": "20px", "fontWeight": 500, "lineHeight": 1.3 },
+      "body_lg": { "fontFamily": "DM Sans", "fontSize": "18px", "fontWeight": 400, "lineHeight": 1.65 },
+      "body": { "fontFamily": "DM Sans", "fontSize": "16px", "fontWeight": 400, "lineHeight": 1.65 },
+      "small": { "fontFamily": "DM Sans", "fontSize": "14px", "fontWeight": 400, "lineHeight": 1.55 },
+      "caption": { "fontFamily": "DM Sans", "fontSize": "12px", "fontWeight": 400, "lineHeight": 1.5 },
+      "label": { "fontFamily": "Space Grotesk", "fontSize": "12px", "fontWeight": 600, "lineHeight": 1.0, "letterSpacing": "0.06em" },
+      "code": { "fontFamily": "JetBrains Mono", "fontSize": "14px", "fontWeight": 400, "lineHeight": 1.6 },
+      "metric": { "fontFamily": "JetBrains Mono", "fontSize": "24px", "fontWeight": 500, "lineHeight": 1.2 }
+    },
+    "prohibited": {
+      "italic_site": "Fraunces 800 italic é exclusivo do wordmark — nunca usar italic no site",
+      "text_on_ember_solid": "Texto sobre accent sólido: usar SOMENTE bg (#0A0A0A)"
+    }
+  },
+  "ratio": {
+    "palette": {
+      "cold_warm": "90/10",
+      "gold_max_viewport_pct": 3,
+      "slate_info_max_viewport_pct": 5
+    },
+    "glow_budget": { "cta_simultaneous": 2, "hero_per_page": 1 },
+    "decoration": { "noise_opacity": 0.025, "grid_line_opacity": "0.20-0.30" }
+  }
+}

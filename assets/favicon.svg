@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="VOTUM favicon — V isolado Georgia italic bold + period ember sobre obsidian" lang="pt">
+  <title>VOTUM favicon v1.4 — V. condensado pra contextos pequenos (browser tab, app icon, social profile)</title>
+  <desc>Mantém DNA do wordmark (Georgia italic bold + period ember) em formato quadrado 1:1. V e period centralizados.</desc>
+  <style>
+    .fv-letter { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: bold; font-size: 90px; letter-spacing: -0.038em; fill: #E8E5DE; }
+    .fv-period { font-size: 44px; fill: #FF5A1F; }
+  </style>
+  <rect x="2.5" y="2.5" width="95" height="95" fill="#0E1014" stroke="#3A4050" stroke-width="0.5"/>
+  <text x="8" y="82" class="fv-letter">V<tspan class="fv-period">.</tspan></text>
+</svg>

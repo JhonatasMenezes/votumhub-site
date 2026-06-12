@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="500" height="120" role="img" aria-label="VOTUM. wordmark inverse — bloco bone-light + Georgia italic bold + period ember · uso sobre fundos ESCUROS" lang="pt">
+  <title>VOTUM wordmark v1.4 — inverse (bloco bone-light sobre fundos ESCUROS)</title>
+  <desc>Variante inversa. Bloco claro contrasta sobre fundos escuros (obsidian, graphite, preto). Para fundos claros, usar wordmark.svg canonical. Halation compensation aplicada (stroke 1.8 paint-order) pra equiparar peso visual ao canonical.</desc>
+  <style>
+    /* halation compensation: stroke same-color em text claro/dark sobre fundo claro engrossa ~5% pra bater com peso visual de bone-on-obsidian */
+    .vt-word { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: bold; font-size: 110px; letter-spacing: -0.038em; fill: #0A0A0A; stroke: #0A0A0A; stroke-width: 1.8; paint-order: stroke; }
+    .vt-period { font-size: 53px; fill: #FF5A1F; stroke: none; }
+  </style>
+  <rect x="26.5" y="10" width="447" height="100" fill="#E8E5DE" stroke="#3A4050" stroke-width="0.7"/>
+  <text x="36" y="98" class="vt-word">V<tspan dx="-13">O</tspan><tspan dx="-9">T</tspan>UM<tspan class="vt-period" dy="2">.</tspan></text>
+</svg>

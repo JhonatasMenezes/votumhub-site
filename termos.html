@@ -6,20 +6,39 @@
   <title>Termos de Uso — Votum</title>
   <meta name="description" content="Termos de Uso do site votumhub.com e dos serviços Votum.">
   <link rel="canonical" href="https://votumhub.com/termos.html">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=DM+Sans:opsz,wght@9..40,400..500&display=swap">
   <style>
-    :root { --bg:#0c1018; --text:#e8edf6; --muted:#9aa7bd; --accent:#4f8cff; --line:#233048; }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; line-height:1.7; }
-    .wrap { max-width:760px; margin:0 auto; padding:48px 24px 80px; }
-    a { color:var(--accent); }
-    .back { color:var(--muted); text-decoration:none; font-size:0.9rem; }
-    .back:hover { color:var(--text); }
-    h1 { font-size:2rem; margin:24px 0 8px; }
-    .updated { color:var(--muted); font-size:0.9rem; margin-bottom:36px; }
-    h2 { font-size:1.2rem; margin:36px 0 12px; padding-top:24px; border-top:1px solid var(--line); }
-    p, li { color:var(--muted); margin-bottom:12px; }
-    ul { padding-left:22px; }
-    strong { color:var(--text); }
+    :root {
+      --c-bg: #0A0A0A; --c-bg-deep: #0E0E10; --c-surface: #1F1F22;
+      --c-text: #E8E5DE; --c-text-2: #B5B2AB; --c-text-4: #5A5856;
+      --c-accent: #FF5A1F; --c-accent-hover: #FF6F39;
+      --font-display: 'Space Grotesk', system-ui, sans-serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: linear-gradient(180deg, #0A0A0A 0%, #0E0E10 100%);
+      color: var(--c-text);
+      font-family: var(--font-body);
+      font-size: 1rem; line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 96px; }
+    a { color: var(--c-accent); text-decoration: underline; text-underline-offset: 3px; transition: color 150ms ease-out; }
+    a:hover { color: var(--c-accent-hover); }
+    a:focus-visible { outline: 2px solid rgba(255, 90, 31, 0.5); outline-offset: 2px; }
+    .back { color: var(--c-text-2); text-decoration: none; font-size: 0.875rem; }
+    .back:hover { color: var(--c-text); }
+    h1 { font-family: var(--font-display); font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 600; line-height: 1.15; margin: 28px 0 8px; letter-spacing: -0.015em; }
+    .updated { color: var(--c-text-2); font-size: 0.875rem; margin-bottom: 40px; }
+    h2 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; line-height: 1.3; margin: 40px 0 12px; padding-top: 28px; border-top: 1px solid rgba(31, 31, 34, 0.6); }
+    p, li { color: var(--c-text-2); margin-bottom: 12px; }
+    ul { padding-left: 22px; }
+    strong { color: var(--c-text); font-weight: 500; }
   </style>
 </head>
 <body>
